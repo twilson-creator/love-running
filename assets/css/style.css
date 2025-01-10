@@ -27,6 +27,10 @@ h3 {
     color: #252525;
 }
 
+.hidden-heading {
+    display: none;
+}
+
 /* Header */
 header {
     background-color: #ffffff;
@@ -258,6 +262,16 @@ main {
         /* Override the heading colour set in general */
         color: #fafafa;
     }
+
+/* Gallery page */
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    line-heiight: 0;
+}
 
 }
 
