@@ -1,16 +1,14 @@
-/* Google font import for Oswald */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 /* General styles */
-
 body {
     min-height: 100vh;
     display: flex;
@@ -27,6 +25,7 @@ h1, h2, h3 {
     color: #252525;
 }
 
+/* Header */
 header {
     background-color: #ffffff;
     padding: 0 1rem;
@@ -83,7 +82,6 @@ nav {
     font-size: 2rem;
 }
 
-
 /* Main content */
 main {
     /* Make main element take up any surplus space to push footer down */
@@ -96,10 +94,11 @@ main {
     height: 600px;
     width: 100%;
     background: url("../images/hero-image.webp") no-repeat center center/cover;
+    position: relative;
 }
 
 #cover-text {
-    /* Sets colour so it has transparency */
+    /* Final rgba value sets the opacity so it is semi-transparent */
     background-color: rgba(241, 109, 107, .7);
     font-size: 130%;
     position: absolute;
@@ -114,6 +113,7 @@ main {
     color: #ffffff;
 }
 
+/* Reasons section */
 #reasons {
     width: 90%;
     margin: 20px auto;
@@ -125,7 +125,8 @@ main {
     font-size: 280%;
 }
 
-#benefits-physical>div, #benefits-mental>div {
+#benefits-physical > div,
+#benefits-mental > div {
     line-height: 20px;
     margin-bottom: 20px;
 }
@@ -134,13 +135,13 @@ main {
     padding: 0 20px;
 }
 
-hr {
+#benefits hr {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
 }
 
 /* Footer */
-.social-networks {
+#social-networks {
     text-align: center;
     padding: 20px 0;
     display: flex;
@@ -178,7 +179,7 @@ hr {
     }
 
     #logo {
-        font-size: 200%;
+        font-size: 280%;
         line-height: 75px;
         margin: 0 0.5rem;
     }
@@ -189,14 +190,14 @@ hr {
         margin-top: 79px;
     }
 
-        /* Hero */
-        #cover-text {
-            width: 300px;
-            right: 50px;
-        }
+    /* Hero */
+    #cover-text {
+        width: 300px;
+        right: 50px;
+    }
 }
 
-/* Media query: laptops desktops and larger (992px and up) */
+/* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover{
         border-bottom: 1px solid #3a3a3a;
